@@ -11,7 +11,14 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: 1;
 }
+
+/* .gradient {
+    background: linear-gradient(
+        black 50%, 51%, white
+    );
+} */
 
 .section-one {
     height: 100vh;
@@ -23,11 +30,11 @@ body {
 
 .logo {
     user-select: none;
-}
-
-.sticky-logo {
-	position: fixed;
-	top: 0;
+    /* -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+     -ms-animation: fadein 2s;
+      -o-animation: fadein 2s;
+         animation: fadein 2s; */
 }
 
 .section-two {
@@ -36,13 +43,21 @@ body {
     display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.content {
+    color: #474747;
+    z-index: 2;
+    margin: 0 15%;
 }
 
 .mission {
-    color: black;
-    margin: 0 10%;
+    padding-bottom: 5px;
+    
 }
+
 
 .footer {
     height: 10vh;
@@ -56,3 +71,39 @@ body {
 	margin: 0 10% 25px 10%;
 	color: #474747;
 }
+
+a {
+    color: #474747;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+a:hover {
+    color: #088696;
+}
+
+
+/* @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} */

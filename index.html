@@ -2,44 +2,48 @@
 <html lang="en" class="no-js">
 
 <head>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>Kinesic</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-</head>
+    <base target="_blank">
+    <meta charset="UTF-8" />
+    <title>Kinesic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+</head>
 
 <!-- 
 TODO
+aos (fade in and fade left)
 og meta
 logo animation 
 -->
 
-
-
-
 <body>
     <div class="static" id="particles"></div>
+
     <div class="section-one">
-        <img class="logo" id="logo" src="./assets/img/logo.png" width="260"/>
+        <img class="logo" id="logo" src="./assets/img/logo.png" width="260" />
     </div>
     <div class="section-two">
-        <h2 class="mission">
-            Identifying the most promising technology companies in the public markets
-        </h2>
+        <div class="content" data-aos="fade-left">
+            <h2 class="mission" >
+                Identifying the most promising technology companies in the public markets
+            </h2>
+            <h3><a href="mailto:info@kinesiccap.com">info@kinesiccap.com</a></h3>
+        </div>
+        
+        
     </div>
     <div class="footer">
         <p class="disclaimer">
-            Kinesic Capital LLC does not solicit, offer, or sell securities via the internet
-            and maintains a single website (www.kinesiccap.com).
+            Kinesic Capital LLC does not solicit, offer, or sell securities via the internet and maintains a single website (www.kinesiccap.com).
         </p>
     </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/particlesjs/particles.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
 </html>
-
-
