@@ -1,3 +1,5 @@
 # kinessiccap-landing
-Download Zip
-Open index.html in browser
+
+## Getting Started
+1. Download Zip
+2. Open index.html in browser
