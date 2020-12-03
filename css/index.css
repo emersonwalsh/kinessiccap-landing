@@ -72,7 +72,8 @@ a {
 }
 
 a:hover {
-    color: #088696;
+    color: gray;
+    /* color: #088696; */
 }
 
 
