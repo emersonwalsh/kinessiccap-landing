@@ -12,8 +12,6 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(document.querySelector("#content"));
 
-
-
 particlesJS('particles',
 	{
 		"particles": {
