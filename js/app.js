@@ -1,12 +1,18 @@
-AOS.init();
+const staticEle = document.querySelector("#particles");
+const primaryColor = '#000000';
+const secondaryColor = '#00000014';
 
-document.addEventListener('aos:in', ({ detail }) => {
-	console.log('animated in', detail);
-});
-  
-document.addEventListener('aos:out', ({ detail }) => {
-	console.log('animated out', detail);
-})
+var observer = new IntersectionObserver(function(entries) {
+	if (entries[0].isIntersecting === true) {
+		staticEle.style.backgroundColor = secondaryColor;
+	} else {
+		staticEle.style.backgroundColor = primaryColor;
+	}
+}, { threshold: [0] });
+
+observer.observe(document.querySelector("#content"));
+
+
 
 particlesJS('particles',
 	{
