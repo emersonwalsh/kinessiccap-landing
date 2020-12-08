@@ -12,14 +12,6 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(document.querySelector('#content'));
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 particlesJS('particles',
 	{
 		"particles": {
