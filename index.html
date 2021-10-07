@@ -11,8 +11,9 @@
     <meta property="og:image" content="./assets/img/white_logo_black_background.png" />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <!-- 
@@ -30,9 +31,9 @@ logo animation
     <div class="section-two">
         <div class="content" id="content">
             <h2 class="mission" >
-                We seek to identify the most promising technology companies in the public markets
+                Investing behind technological change.
             </h2>
-            <h3><a href="mailto:info@kinesiccap.com">info@kinesiccap.com</a></h3>
+            <h3><a class="email" href="mailto:info@kinesiccap.com">info@kinesiccap.com</a></h3>
         </div>
     </div>
     <div class="footer">
@@ -40,9 +41,30 @@ logo animation
             Kinesic Capital LLC does not solicit, offer, or sell securities via the internet and maintains a single website (www.kinesiccap.com).
         </p>
     </div>
+
+    <div class="modal fade" id="welcomModal" tabindex="-1" role="dialog" aria-labelledby="welcomModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="welcomModalLongTitle">Welcome</h5>
+            </div>
+            <div class="modal-body">
+                <p>Here is where you put the relatively long statement that no one will read but says a lot without saying anything you know what I mean.</p>
+                <p>Here's the second paragraph if you need one.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">I agree</button>
+            </div>
+            </div>
+        </div>
+    </div>
     
     <script src="./assets/particlesjs/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+
 </body>
 
 </html>

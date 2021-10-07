@@ -12,6 +12,13 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(document.querySelector('#content'));
 
+$(window).on('load', function() {
+	$('#welcomModal').modal({
+		show: true,
+		backdrop: 'static'
+	});
+});
+
 particlesJS('particles',
 	{
 		"particles": {
